@@ -23,15 +23,16 @@ var xhr = new XMLHttpRequest()
 
 //test out var xhr = new XMLHttpRequest()
 
-
-function loadDoc() {
-  let sign = 'tauras'
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("test").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "http://sandipbgt.com/theastrologer/api/horoscope/taurus/today/", true);
-  xhttp.send();
-}
+document.getElementById("get-sign").addEventListener("click",
+  function loadDoc() {
+    let sign = 'tauras'
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("test").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "http://sandipbgt.com/theastrologer/api/horoscope/taurus/today/", true);
+    xhttp.send();
+  }
+)
