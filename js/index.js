@@ -26,7 +26,7 @@ var xhr = new XMLHttpRequest()
 document.getElementById("get-sign").addEventListener("click",
   function loadDoc() {
     
-    let sign = 'tauras'//find a way to get the sign based on what the user inputs
+    const sign = prompt("what is your sign?")
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -34,7 +34,7 @@ document.getElementById("get-sign").addEventListener("click",
         document.getElementById("test").innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "http://sandipbgt.com/theastrologer/api/horoscope/taurus/today/", true);
+    xhttp.open("GET", `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/today/`, true);
     xhttp.send();
   }
 )
