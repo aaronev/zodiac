@@ -21,11 +21,13 @@ var xhr = new XMLHttpRequest()
 */
 
 
-//test out var xhr = new XMLHttpRequest()
+//test out var xhr = new XMLHttpRequest() 
 
 document.getElementById("get-sign").addEventListener("click",
   function loadDoc() {
-    let sign = 'tauras'
+    
+    let sign = 'tauras'//find a way to get the sign based on what the user inputs
+
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
