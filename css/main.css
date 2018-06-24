@@ -8,6 +8,8 @@ body {
 
 li {
   list-style: none;
+  border: solid;
+  background-color: gray;
 }
 
 img {
