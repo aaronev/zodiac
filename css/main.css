@@ -1,0 +1,19 @@
+* {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: none;
+}
+
+#horoscope {
+  text-align: left;
+}

@@ -9,5 +9,6 @@ document.getElementById("signs").addEventListener("click",
     };
     xhttp.open("GET", `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/today/`, true);
     xhttp.send();
+    document.getElementById(sign).style.display="block";
   }
 )

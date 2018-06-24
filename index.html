@@ -16,50 +16,91 @@
 		<!-- Main -->
 		<link rel="stylesheet" href="css/main.css">
 	</head>
+
 	<body>
 
-    <h1>Horoscope</h1>
-    <h2>Choose your Zodiac Sign</h2>
-    <ul id="signs">
-      Jan 20 - Feb 18 <li>Aquarius</li>
-      Feb. 19 - Mar. 20 <li>Pisces</li>
-      Mar. 21 - Apr. 19 <li>Aries</li>
-      Apr. 20 - May 20 <li>Taurus</li>
-      May 21 - Jun 20 <li>Gemini</li>
-      June 21 - July 22 <li>Cancer</li>
-      July 23 - Aug 22 <li>Leo</li>
-      Aug 23 - Sep 22 <li>Virgo</li>
-      Sep 23 - Oct 22 <li>Libra</li>
-      Oct. 23 - Nov 21 <li>Scorpio</li>
-      Nov 22 - Dec 21 <li>Sagittarius</li>  
-      Dec 22 - Jan 19 <li>Capricorn</li>
-    </ul>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#">Zodiac</a>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+    </nav>
 
-    <p id="horoscope"></p>
+    <!-- main section -->
+    <main>
+      <h1>Horoscope</h1>
+      <h2>Choose Zodiac Sign</h2>
+      <ul id="signs" class="row">
+        <div class="col-4">
+          Jan 20 - Feb 18 <li>Aquarius</li>
+        </div>
+        <div class="col-4">
+          Feb. 19 - Mar. 20 <li>Pisces</li>
+        </div>
+        <div class="col-4">
+          Mar. 21 - Apr. 19 <li>Aries</li>
+        </div>
+        <div class="col-4">
+          Apr. 20 - May 20 <li>Taurus</li>
+        </div>
+        <div class="col-4">
+          May 21 - Jun 20 <li>Gemini</li>
+        </div>
+        <div class="col-4">
+          June 21 - July 22 <li>Cancer</li>
+        </div>
+        <div class="col-4">
+          July 23 - Aug 22 <li>Leo</li>
+        </div>
+        <div class="col-4">
+          Aug 23 - Sep 22 <li>Virgo</li>
+        </div>
+        <div class="col-4">
+          Sep 23 - Oct 22 <li>Libra</li>
+        </div>
+        <div class="col-4">
+          Oct. 23 - Nov 21 <li>Scorpio</li>
+        </div>
+        <div class="col-4">
+          Nov 22 - Dec 21 <li>Sagittarius</li>
+        </div>  
+        <div class="col-4">
+          Dec 22 - Jan 19 <li>Capricorn</li>
+        </div>
+      </ul>
+    </main>
 
-    <img id="aquarius" src="https://i2.wp.com/numerologydailyreport.com/wp-content/uploads/2017/07/Aquarius-Traits2.png?fit=1254%2C700&ssl=1" alt="aquarius sign formed in the stars">
+    <!-- result of user input -->
+    <section class="container-fluid">
+      <p id="horoscope"></p>
 
-    <img id="pisces" src="http://identity-mag.com/wp-content/uploads/2018/03/pisces.png" alt="pisces sign formed in the stars">
+      <img id="aquarius" class="w-100" src="https://i2.wp.com/numerologydailyreport.com/wp-content/uploads/2017/07/Aquarius-Traits2.png?fit=1254%2C700&ssl=1" alt="aquarius sign formed in the stars">
 
-    <img id="aries" src="https://i2.wp.com/numerologydailyreport.com/wp-content/uploads/2017/07/aries-traits.jpg?fit=770%2C538&ssl=1" alt="aries sign formed in the stars">
+      <img id="pisces" class="w-100" src="http://identity-mag.com/wp-content/uploads/2018/03/pisces.png" alt="pisces sign formed in the stars">
 
-    <img id="taurus" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_taurus.png" alt="taurus sign formed in the stars">
+      <img id="aries" src="https://i2.wp.com/numerologydailyreport.com/wp-content/uploads/2017/07/aries-traits.jpg?fit=770%2C538&ssl=1" alt="aries sign formed in the stars">
 
-    <img id="gemini" src="http://www.izodiaque.com/wp-content/uploads/2017/05/Gemini.png" alt="gemini sign formed in the stars">
+      <img id="taurus" class="w-100" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_taurus.png" alt="taurus sign formed in the stars">
 
-    <img id="cancer" src="https://piedfeed.com/wp-content/uploads/2017/08/horoscope-cancer-sign.jpg" alt="cancer sign formed in the stars">
+      <img id="gemini" class="w-100" src="http://www.izodiaque.com/wp-content/uploads/2017/05/Gemini.png" alt="gemini sign formed in the stars">
 
-    <img id="leo" src="http://myentertainmentspot.com/wp-content/uploads/2017/11/az_img_horoscope_leo-660x330.png" alt="leo sign formed in the stars">
+      <img id="cancer" class="w-100" src="https://piedfeed.com/wp-content/uploads/2017/08/horoscope-cancer-sign.jpg" alt="cancer sign formed in the stars">
 
-    <img id="virgo" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_virgo.png" alt="virgo sign formed in the stars">
+      <img id="leo" class="w-100" src="http://myentertainmentspot.com/wp-content/uploads/2017/11/az_img_horoscope_leo-660x330.png" alt="leo sign formed in the stars">
 
-    <img id="libra" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_libra.png" alt="libra sign formed in the stars">
+      <img id="virgo" class="w-100" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_virgo.png" alt="virgo sign formed in the stars">
 
-    <img id="scorpio" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_scorpio.png" alt="scorpio sign formed in the stars">
+      <img id="libra" class="w-100" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_libra.png" alt="libra sign formed in the stars">
 
-    <img id="sagittarius" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_sagittarius.png" alt="sagittarius sign formed in the stars">
+      <img id="scorpio" class="w-100" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_scorpio.png" alt="scorpio sign formed in the stars">
 
-    <img id="capricorn" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_capricorn.png" alt="capricorn sign formed in the stars">
+      <img id="sagittarius" class="w-100" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_sagittarius.png" alt="sagittarius sign formed in the stars">
+
+      <img id="capricorn" class="w-100" src="https://www.astrologyzone.com/wp-content/themes/JointsWP-master/assets/images/horoscopes/horoscope-article-hero/az_img_horoscope_capricorn.png" alt="capricorn sign formed in the stars">
+    </section>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -72,5 +113,7 @@
 
     <script type="text/javascript" src="js/index.js"></script>
 
-	</body>
+    
+
+  </body>
 </html>
