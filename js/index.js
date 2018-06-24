@@ -23,11 +23,9 @@ var xhr = new XMLHttpRequest()
 
 //test out var xhr = new XMLHttpRequest() 
 
-document.getElementById("get-sign").addEventListener("click",
-  function loadDoc() {
-    
-    const sign = prompt("what is your sign?")
-
+document.getElementById("signs").addEventListener("click",
+  function (e) {
+    const sign = e.target.textContent.toLowerCase()
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
