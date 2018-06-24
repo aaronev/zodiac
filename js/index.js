@@ -4,7 +4,7 @@ document.getElementById("signs").addEventListener("click",
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("test").innerHTML = JSON.parse(this.responseText).horoscope;
+        document.getElementById("horoscope").innerHTML = JSON.parse(this.responseText).horoscope;
       }
     };
     xhttp.open("GET", `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/today/`, true);
