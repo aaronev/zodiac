@@ -48,16 +48,14 @@ document.getElementById("signs").addEventListener("click",
       xhttp.open("GET", `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/today/`, true);
       xhttp.send();
 
-      //this allows me to make sure all the images display goes back to none once a user clicks another sign
-      var allImg = document.getElementsByTagName('IMG')
-      for (let i = 0; i < allImg.length; i++) {
-        allImg[i].style.display="none"
-      }
+      //Sets src of img to image link
+      document.getElementById("img").src = allSigns[sign]
+      
+      //sets img to have display of block
+      document.getElementById("img").style.display="block"
 
       //this causes the main section to go back to none
       cx().select.style.display="none"
-      //this reveals the result image
-      document.getElementById(sign).style.display="block";
     }
   }
 )
